@@ -13,7 +13,7 @@ import os , ssl,time
 X = np.load('image.npz')['arr_0']
 y = pd.read_csv("labels.csv")["labels"]
 print(pd.Series(y).value_counts())
-classes = ['0','1','2','3','4','5','6','7','8','9']
+classes = ['a','b','c','d','e','f','g','h','i','j','k','l','m','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
 nclasses = len(classes)
 
 X_train,X_test,y_train,y_test = train_test_split(X,y,random_state = 9,train_size = 7500,test_size = 2500)
